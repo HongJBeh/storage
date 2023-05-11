@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+body {
+    background-image: url('DataFlow.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+.title-1{
+    text-align: center;
+    font-size: 30px;
+ }
+ .title-2{
+    text-align: center;
+ }
+ .title-3{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 1cm;
+ }
+
+ 
+ .img-slider{
+    position: relative;
+    width: 1280px;
+    height: 720px;
+    margin: 10px;
+    background: #000000;
+  }
+  .fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+  
+  .img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0% at 0 50%);
+    background-size:cover
+    
+  }
+  
+  .img-slider .slide.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 1.6s;
+    transition-property: clip-path;
+  }
+  
+  .img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .img-slider .navigation{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .img-slider .navigation .btn{
+    background: rgba(255, 255, 255, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 10px;
+    border-radius: 0%;
+    cursor: pointer;
+  }
+  
+  .img-slider .navigation .btn.active{
+    background: #3e21bd;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+
+
+
+.img-a-text{
+  padding-top: 20px;
+  padding-left: 174px;
+}
+ .img-a-text a{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+ }
+ .img-a-text a:hover{
+    color: rgb(134, 151, 248);
+    transition: all ease 0.4s;
+ }
+ .column-1 img{
+    width: 70%;
+ }
+ .column-1 a:hover{
+    transition: all ease 0.4s;
+    opacity: 0.5;
+ }
+
+
+  .caption {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px black;
+  }
+
+  .caption-reg{
+    color: #ffffff;
+    font-size: 50px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 320px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 6px 2px black;
+  }
+
+  .caption-link{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px 16px;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .caption-link a{
+    text-decoration: none; 
+    outline: 2px rgb(243, 243, 243) solid; 
+    outline-offset: 5px;
+    text-shadow: 4px 2px black;
+  }
