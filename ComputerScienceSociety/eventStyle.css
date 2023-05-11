@@ -1,0 +1,30 @@
+
+body {
+    background-image: url('DataFlow.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+#eventName{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div.line{
+    border-collapse: collapse;
+    border-color: black;
+    border-style: solid;
+}
+
+#select1{
+    border: none;
+}
+
+center{
+    background-color: rgb(210, 210, 210);
+}
+
+select{
+    background-color: rgb(255, 255, 255);
+}
